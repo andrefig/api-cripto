@@ -19,7 +19,7 @@ Response fields
 - total (String): Total quantity of quote currency
 - currency (String): The quote currency
 
-* To do
+To do
 - Configurable Binance API URL
 - Design a nice frontend
 
