@@ -15,5 +15,3 @@ Response fields
   ● currency (String): The quote currency
 
 * Ruby version: Rails 6.1.4.1
-
-# api-cripto

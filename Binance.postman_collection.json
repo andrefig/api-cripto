@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "b43d478e-565c-42e5-aae3-c4f01083d56c",
+		"name": "Binance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.binance.com/api/v3/depth?symbol=BTCUSDT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.binance.com/api/v3/depth?symbol=BTCUSDT&limit=5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"binance",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"depth"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTCUSDT"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/quote?action=buy&base_currency=BTC&quote_currency=USD&ammount=200",
+			"protocolProfileBehavior": {
+				"strictSSL": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/quote?action=buy&base_currency=ETH&quote_currency=USDT&ammount=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"quote"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "buy"
+						},
+						{
+							"key": "base_currency",
+							"value": "ETH"
+						},
+						{
+							"key": "quote_currency",
+							"value": "USDT"
+						},
+						{
+							"key": "ammount",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.binance.com/api/v3/exchangeInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.binance.com/api/v3/exchangeInfo",
+					"protocol": "https",
+					"host": [
+						"api",
+						"binance",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"exchangeInfo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
